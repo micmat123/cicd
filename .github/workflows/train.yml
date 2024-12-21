@@ -21,3 +21,6 @@ jobs:
 
       - name: Train model
         run: python src/train.py
+
+      - name: List cicd
+        run: ls
