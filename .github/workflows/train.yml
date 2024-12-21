@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: '3.9'
     
-      - name: install sklearn
-        run: pip install scikit-learn
+      - name: install dependencies
+        run: pip install -r requirements.txt
 
       - name: Train model
         run: python src/train.py
