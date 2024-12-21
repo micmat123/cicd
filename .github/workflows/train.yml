@@ -24,3 +24,10 @@ jobs:
 
       - name: List cicd
         run: ls
+
+      - name: Upload model as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: model.joblib
+          name: trained_model
+
