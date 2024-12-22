@@ -23,6 +23,6 @@ print(score)
 
 mlflow.set_experiment('cicd')
 with mlflow.start_run():
-    mlflow.log_metrics('score', score)
+    mlflow.log_metric('score', score)
 
 joblib.dump(lr, "model.joblib")
