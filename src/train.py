@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
 import joblib
 import mlflow
+import os
 
 mlflow.set_tracking_uri('https://8a0b-34-28-92-193.ngrok-free.app')
 
